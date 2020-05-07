@@ -157,7 +157,7 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../image/68.png);
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
   height: 840px;
   background-position: center center;
   background-size: cover;
