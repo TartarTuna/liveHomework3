@@ -56,6 +56,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -90,7 +91,7 @@ img {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header {
     padding: 30px 48px;
   }
@@ -100,7 +101,7 @@ img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .header {
     position: relative;
     padding: 10px 0;
@@ -166,7 +167,7 @@ img {
 }
 
 .banner .container {
-  margin-right: 360px;
+  margin-right: 13%;
 }
 
 .slogan {
@@ -185,7 +186,7 @@ img {
   text-align: right;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
   .banner .container {
     margin-right: 48px;
   }
@@ -201,7 +202,7 @@ img {
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:576px) {
   .banner {
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
     height: 394px;
@@ -280,7 +281,7 @@ img {
   line-height: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .proHeart .container {
     max-width: 672px;
   }
@@ -320,7 +321,7 @@ img {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .proHeart .container {
     max-width: 327px;
   }
@@ -424,7 +425,7 @@ img {
   vertical-align: middle;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
   .classic .container {
     max-width: 672px;
   }
@@ -473,7 +474,7 @@ img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .classic .container {
     max-width: 329px;
   }
@@ -535,7 +536,221 @@ img {
   }
 }
 
+/* glasses */
+.glasses {
+  padding-top: 64px;
+  padding-bottom: 479px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.crossover {
+  max-width: 1540px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.glassBlock-left {
+  margin-right: 8px;
+}
+
+.rightGlass-up {
+  margin-bottom: 8px;
+}
+
+.rightGlass-down {
+  display: flex;
+}
+
+.downGlass-left {
+  margin-right: 8px;
+}
+
+.downGlass-rightUp {
+  margin-bottom: 8px;
+}
+
+.downGlass-moreBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 167px;
+}
+
+.moreBtn-wrap {
+  position: relative;
+  padding-right: 84px;
+}
+
+.moreBtn {
+  position: absolute;
+  background-color: #fff;
+  top: 8%;
+  bottom: 8%;
+  padding-top: 25px;
+  width: calc(100% - 21px);
+  left: 10%;
+}
+
+.moreBtnText {
+  padding-left: 32px;
+  margin-right: 17px;
+  font-size: 72px;
+  color: #AA0601;
+  font-weight: 700;
+}
+
+.moreBtnText::before {
+  content: "MORE";
+  position: absolute;
+  color: #AA0601;
+  transition: all .65s .3s;
+  transform: translateY(0px);
+}
+
+.moreBtnText:hover::before {
+  transform: translateY(-85px);
+  opacity: .7;
+}
+
+.moreBtnText::after {
+  content: "MORE";
+  position: absolute;
+  color: #AA0601;
+  transition: all .65s .3s;
+  transform: translateY(0px);
+  left: 32px;
+}
+
+.moreBtnText:hover::after {
+  transform: translateY(-145px);
+  opacity: .4;
+}
+
+.moreArrow {
+  display: inline-block;
+  transition: all .3s;
+  transform: translateX(0px);
+}
+
+.moreArrow:hover {
+  transform: translateX(15px);
+}
+
+.crossover-down {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 144px;
+}
+
+.others {
+  display: flex;
+  justify-content: space-between;
+}
+
+.othersItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 585px;
+  height: 592px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.doubleA {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png);
+}
+
+.youth {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png);
+}
+
+.othersText {
+  font-size: 72px;
+  line-height: 108px;
+  font-weight: 700;
+  color: #AA0601;
+  z-index: 1;
+}
+
+.filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width:992px) {
+  .glasses .container {
+    padding: 0 40px;
+  }
+
+  .crossover {
+    margin-bottom: 40px;
+  }
+
+  .crossover-down {
+    margin-bottom: 40px;
+  }
+
+  .sectionTitle-white {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .othersItem {
+    width: 322px;
+    height: 280px;
+  }
+
+  .othersText {
+    font-size: 32px;
+    line-height: 25px;
+  }
+}
+  
+@media (max-width:576px) {
+  .glasses .container {
+    padding: 0 24px;
+  }
+  
+  .glasses {
+    padding-bottom: 189px;
+  }
+
+  .crossover {
+    margin-bottom: 20px;
+  }
+
+  .crossover-down {
+    margin-bottom: 24px;
+  }
+
+  .others {
+    flex-wrap: wrap;
+  }
+
+  .othersItem {
+    width: 100%;
+  }
+
+  .doubleA {
+    margin-bottom: 20px;
+  }
+}
+
 /* customer */
+.customer {
+  margin-top: -380px;
+}
 
 .customer .container {
   max-width: 1200px;
@@ -549,7 +764,7 @@ img {
   line-height: 72px;
   font-weight: 700;
   text-align: center;
-/*   color: #fff; */
+  color: #fff;
 }
 
 .allCards {
@@ -589,7 +804,11 @@ img {
   font-weight: 400;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
+  .customer {
+    margin-top: -480px;
+  }
+  
   .customer .container {
     max-width: 672px;
     padding: 40px 0 40px 0;
@@ -604,6 +823,10 @@ img {
   .allCards {
     flex-wrap: wrap;
   }
+
+  .cardContent {
+    background-color: #fff;
+  }
   
   .cardItem {
     width: 324px;
@@ -611,10 +834,14 @@ img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .customer .container {
     max-width: 352px;
     padding: 24px 0 24px 0;
+  }
+
+  .customer {
+    margin-top: -200px;
   }
   
   .sectionTitle-white {
@@ -641,7 +868,7 @@ img {
   padding: 64px 0 92px 0;
 }
 
-.sectionTitle {
+.sectionTitle-black {
   margin-bottom: 24px;
   text-align: center;
   font-size: 48px;
@@ -721,7 +948,7 @@ input[type="submit"]:hover {
   background: #650300;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
   .contact .container {
     max-width: 498px;
   }
@@ -737,7 +964,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .contact .container {
     max-width: 327px;
   }
@@ -781,6 +1008,10 @@ a {
   font-size: 16px;
   line-height: 24px;
 }
+
+.footerSocialIcon {
+    display: flex;
+  }
 
 .SNSIcon {
   margin-left: 32px;
@@ -840,7 +1071,7 @@ a {
   margin-left: 62px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .footer .container {
     max-width: 672px;
     padding: 40px 0;
@@ -883,7 +1114,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .footer .container {
     max-width: 351px;
     padding: 24px 0;
@@ -926,7 +1157,7 @@ a {
     font-size: 14px;
     line-height: 21px;
   }
- 
+  
   .copyrightLogo {
     display: block;
     margin-right: 0;
@@ -954,5 +1185,3 @@ a {
   }
   
 }
-
-
