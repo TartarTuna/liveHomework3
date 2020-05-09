@@ -715,6 +715,17 @@ img {
     font-size: 32px;
     line-height: 25px;
   }
+
+  .moreBtnText {
+    font-size: 40px;
+    line-height: 30px;
+
+  }
+
+  .moreArrow {
+      width: 27px;
+      height: 27px;
+    }
 }
   
 @media (max-width:576px) {
@@ -744,6 +755,16 @@ img {
 
   .doubleA {
     margin-bottom: 20px;
+  }
+
+  .moreBtnText {
+    font-size: 26px;
+    line-height: 20px;
+  } 
+
+  .moreArrow {
+    width: 18px;
+    height: 18px;
   }
 }
 
